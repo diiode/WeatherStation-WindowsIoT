@@ -7,7 +7,49 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.Resources>
+        
+        <!-- -> bug -->
+        <Style TargetType="StackPanel">
+            <Setter Property="Margin" Value="0, 30, 0, 30"/>
+        </Style>
+        <Style TargetType="FontIcon">
+            <Setter Property="FontSize" Value="96" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="36" />
+        </Style>
+    </Page.Resources>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <!--Temperature-->
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <FontIcon FontFamily="Assets/Fonts/WeatherIcons/weathericons-regular-webfont.ttf#Weather Icons" Glyph="&#xf055;" FontSize="96"></FontIcon>
+            <TextBlock TextAlignment="Center">23,3 °C</TextBlock>
+        </StackPanel>
+        <!--Pressure-->
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <FontIcon FontFamily="Assets/Fonts/WeatherIcons/weathericons-regular-webfont.ttf#Weather Icons" Glyph="&#xf079;" FontSize="96"></FontIcon>
+            <TextBlock TextAlignment="Center">1010,4 hPa</TextBlock>
+        </StackPanel>
+        <!--Humidity-->
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <FontIcon FontFamily="Assets/Fonts/WeatherIcons/weathericons-regular-webfont.ttf#Weather Icons" Glyph="&#xf07a;" FontSize="96"></FontIcon>
+            <TextBlock TextAlignment="Center">65%</TextBlock>
+        </StackPanel>
+        <!--Forecast-->
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <FontIcon FontFamily="Assets/Fonts/WeatherIcons/weathericons-regular-webfont.ttf#Weather Icons" Glyph="&#xf007;" FontSize="96"></FontIcon>
+            <TextBlock TextAlignment="Center">Wind and Rain</TextBlock>
+        </StackPanel>
     </Grid>
 </Page>
