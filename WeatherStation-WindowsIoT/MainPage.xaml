@@ -34,17 +34,17 @@
         <!--Temperature-->
         <StackPanel Grid.Row="0" Grid.Column="0">
             <FontIcon FontFamily="Assets/Fonts/WeatherIcons/weathericons-regular-webfont.ttf#Weather Icons" Glyph="&#xf055;" FontSize="96"></FontIcon>
-            <TextBlock TextAlignment="Center">23,3 °C</TextBlock>
+            <TextBlock x:Name="TemperatureText" TextAlignment="Center">23,3 °C</TextBlock>
         </StackPanel>
         <!--Pressure-->
         <StackPanel Grid.Row="0" Grid.Column="1">
             <FontIcon FontFamily="Assets/Fonts/WeatherIcons/weathericons-regular-webfont.ttf#Weather Icons" Glyph="&#xf079;" FontSize="96"></FontIcon>
-            <TextBlock TextAlignment="Center">1010,4 hPa</TextBlock>
+            <TextBlock x:Name="PressureText" TextAlignment="Center">1010,4 hPa</TextBlock>
         </StackPanel>
         <!--Humidity-->
         <StackPanel Grid.Row="1" Grid.Column="0">
             <FontIcon FontFamily="Assets/Fonts/WeatherIcons/weathericons-regular-webfont.ttf#Weather Icons" Glyph="&#xf07a;" FontSize="96"></FontIcon>
-            <TextBlock TextAlignment="Center">65%</TextBlock>
+            <TextBlock x:Name="HumidityText" TextAlignment="Center">65%</TextBlock>
         </StackPanel>
         <!--Forecast-->
         <StackPanel Grid.Row="1" Grid.Column="1">

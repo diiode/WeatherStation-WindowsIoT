@@ -9,6 +9,7 @@ namespace WeatherStation_WindowsIoT
     public interface IBMP280
     {
         Task Initialize();
+        Task<float> ReadTemperature();
         Task<float> ReadPressure();
         Task<float> ReadAltitude(float seaLevel);
         Task<float> ReadHumidity();
